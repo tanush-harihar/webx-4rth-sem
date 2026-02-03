@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library</title>
+<link rel="stylesheet" href="homestyle.css">
+
+<script>
+    function openGameOfLife() { 
+      window.location.href = "gameoflife.html"; 
+    }
+    function openIHaveNoMouth() { 
+      window.location.href = "ihavenomouth.html"; 
+    }
+    function openNineTeen() {
+       window.location.href = "nineteeneightyfour.html"; 
+      }
+    function openDictionaryOfSpanish() {
+       window.location.href = "dictionaryofspanish.html"; 
+      }
+    function openWhiteNights() { 
+      window.location.href = "Whitenights.html";
+     }
+    function openIt() {
+       window.location.href = "itstking.html"; 
+    }
+</script>
+</head>
+
+<body>
+
+<div class="top">
+    <div class="mainMenue">
+        <button>Home</button>
+        <button>Library</button>
+        <button>Settings</button>
+        <button>About</button>
+    </div>
+    Sort by:
+    <select>
+        <option>Title</option>
+        <option>Author</option>
+        <option>Publication Date</option>
+    </select>
+
+</div>
+<div id="grid">
+    <button onclick="openGameOfLife()">
+        <img src="gameoflife.jpg">
+        <div class="info">The Game of Life</div>
+    </button>
+
+    <button onclick="openIHaveNoMouth()">
+        <img src="inms.jpg">
+        <div class="info">I Have No Mouth and I Must Scream</div>
+    </button>
+
+    <button onclick="openNineTeen()">
+        <img src="1984.jpg">
+        <div class="info">1984</div>
+    </button>
+
+    <button onclick="openDictionaryOfSpanish()">
+        <img src="dictionaryofspanish.jpeg">
+        <div class="info">Dictionary of Spoken Spanish</div>
+    </button>
+
+    <button onclick="openWhiteNights()">
+        <img src="whitenights.jpeg">
+        <div class="info">White Nights</div>
+    </button>
+
+    <button onclick="openIt()">
+        <img src="itstking.jpeg">
+        <div class="info">It : a novel</div>
+    </button>
+</div>
+</body>
+</html>
