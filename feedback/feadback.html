@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>guest lecture feedback form</title>
+    <script>
+        function submitFeedback() {
+            window.location.href = "submitted.html";
+            }
+    </script>
+</head>
+<body>
+    <h1 style="margin: 20px;">Internet Archive of Books – Beta Feedback Form</h1>
+        </div>
+        <div class="review-box">
+            Dear User,<br><br>
+
+            This is the feedback form for the beta version of the Internet Archive of Books that you recently explored.<br>
+            We appreciate you taking the time to try the platform.<br>
+            We hope you found it useful, accessible, and engaging.<br>
+            Please share your feedback below to help us improve future updates and features.<br>
+            Your input is valuable in shaping the final version of the archive.<br>
+        </div>
+    <form onsubmit="submitFeedback()">
+        <div class="review-box">
+           <p>Please provide your full name below:</p>
+            <input type="text" name="fullname">
+        </div>
+        <div class="review-box">
+           <p>Please provide your email address below:</p>
+            <input type="text" name="email">
+        </div>
+        <div class="review-box">
+              <p>Please select the date of the website visit:</p>
+                <input type="date" name="lecture_date" style="color: #dcd6d6; background-color: #5f5b5b;">
+        </div>
+        <div class="review-box">
+           <p>How would you rate the overall website?</p>
+                <input type="radio" name="rating">Excellent</input>
+                <input type="radio" name="rating">Good</input>
+                <input type="radio" name="rating">Average</input>
+                <input type="radio" name="rating">Poor</input>
+        </div>
+        <div class="review-box">
+           <p>What did you like most about the website?</p>
+            <textarea rows="4" cols="50"></textarea>
+        </div>
+        <div class="review-box">
+           <p>What improvements would you suggest for future website updates?</p>
+            <textarea rows="4" cols="50"></textarea>
+        </div>
+        <div class="review-box">
+           <p>Any additional comments or feedback?</p>
+            <textarea rows="4" cols="50"></textarea>
+        </div>
+        <div class="review-box">
+              <p>what do you want in future website updates?</p>
+                <input type="checkbox" name="future_topics" value="Artificial Intelligence">AI Summary</input><br>
+                <input type="checkbox" name="future_topics" value="Machine Learning">AI Search</input><br>
+                <input type="checkbox" name="future_topics" value="Data Science">AI Review</input><br>
+                <input type="checkbox" name="future_topics" value="Cybersecurity">AI Recommendation</input><br>
+        </div>
+    </form>
+    <div class="review-box">
+            <button onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+</body>
+</html>

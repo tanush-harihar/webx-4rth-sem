@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script>
+        function contactSupport() {
+            var email = "tanushharihar@gmail.com"
+            document.getElementById("email").innerHTML = "Contact Support: " + email;
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Feedback Submitted</title>
+</head>
+<body>
+    <h1 style="margin: 20px;">Thank you for your feedback!</h1>
+    <div class="review-box">
+        <button onclick="window.location.href='feadback.html'" style = "width: 50%;">Submit Another Feedback</button>
+        <button style = "width: 40%;" onclick="contactSupport()">Contact Support</button>
+        <a id = "email" href="mailto:tanushharihar@gmail.com"></a>
+    </div>
+</body>
+</html>

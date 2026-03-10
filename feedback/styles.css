@@ -1,0 +1,42 @@
+body {
+    font-family: "Cinzel", serif;
+    background-color: #e0e0e0;
+    background-image: url("main.jpg");
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+}
+.review-box {
+    border: 2px solid #000;
+    padding: 20px;
+    height: auto;
+    color: #e0e0e0;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: #484545;
+    box-shadow: 0px 0px 10px#484444;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    
+}
+.review-box input[type="text"], .review-box textarea, .review-box input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #605c5c;
+    border: 1px solid #454444;
+    border-radius: 5px;
+}
+.review-box button{
+    background-color: #ffffff;
+    color: rgb(10, 10, 10);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
