@@ -1,0 +1,132 @@
+/* ===== HEADER ===== */
+.center {
+  margin: auto;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #858585;
+  padding: 10px;
+  background: #011830;
+}
+
+.center h1 {
+  font-size: 26px;
+  margin-right: 15px;
+  color: #ffffff;
+  display: inline-block;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  font-size: 14px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #d1d1d1;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #011830;
+  color: white;
+}
+
+/* ===== QUESTION AREA ===== */
+.question {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-left: 40px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 65%;
+}
+
+.question p {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* OPTIONS */
+.question .option {
+  font-size: 20px;
+  width: 90%;
+  margin: 12px 0;
+  padding: 15px;
+  background: #f1f3f9;
+  border-radius: 8px;
+  display: block;
+  transition: 0.25s;
+}
+
+.bottom {
+  width: 20%;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+.center2 {
+  margin: auto;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #858585;
+  padding: 10px;
+  background: #ffffff;
+}
+.question .option:hover {
+  background: #011830;
+  color: white;
+  transform: scale(1.02);
+}
+
+/* ===== SIDEBAR (NEW FIX) ===== */
+.sidebar {
+  position: fixed;
+  top: 90px;
+  right: 30px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== TIMER ===== */
+#timer {
+  background:#011830;
+  color: white;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#timerData {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ===== QUESTION LIST ===== */
+.questionList {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+.questionList h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.questionList button {
+  width: 40%;
+  margin: 5px;
+  background: #eef1ff;
+}
+.questionList button:hover {
+  background: #011830;
+  color: white;
+}

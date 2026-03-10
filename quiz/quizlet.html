@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Quizlet</title>
+<script src="script.js"></script>
+</head>
+<body>
+    <header class="center">
+        <h1>Quizlet</h1>
+        <a href = "#home"><button>Home</button></a>
+        <a href = "#about"><button>About</button></a>
+        <a href = "#contact"><button>Contact</button></a>
+        <button>Sign up</button>
+        <button>Log in</button>
+    </header>
+    <div class = "question" >
+        <h1 id = "questionData">What will be the output?
+        <p>x = [1, 2, 3]<br>
+        y = x<br>
+        y.append(4)<br>
+        print(x)<br></p>
+        </h1>
+        <button class = "option" id = "option1" onclick="selectOption(1)">A. [1, 2, 3]</button>
+        <button class = "option" id = "option2" onclick="selectOption(2)">B. [1, 2, 3, 4]</button>
+        <button class = "option" id = "option3" onclick="selectOption(3)">C. [4]</button>
+        <button class = "option" id = "option4" onclick="selectOption(4)">D. Error</button>
+        <button class = "bottom" onclick="resetOptions()">Reset</button>
+        <button class = "bottom" onclick = "changeQuestion(-1)">Previous</button>
+        <button class = "bottom" id = "nextButton" onclick="changeQuestion(1)">Next</button>
+        <button class = "bottom" onclick="saveOption()">SAVE</button>
+    </div>
+    <div class="sidebar">
+        <div id="timer">
+            <h1 id="timerData"></h1>
+        </div>
+
+        <div class="questionList">
+            <h1>Question List</h1>
+            <button id = "question1" onclick = "updateQuestion(1)" style="background: #011830; color: white;">Question 1</button>
+            <button id = "question2" onclick = "updateQuestion(2)">Question 2</button>
+            <button id = "question3" onclick = "updateQuestion(3)">Question 3</button>
+            <button id = "question4" onclick = "updateQuestion(4)">Question 4</button>
+            <button id = "question5" onclick = "updateQuestion(5)">Question 5</button>
+            <button id = "question6" onclick = "updateQuestion(6)">Question 6</button>
+            <button id = "question7" onclick = "updateQuestion(7)">Question 7</button>
+            <button id = "question8" onclick = "updateQuestion(8)">Question 8</button>
+            <button id = "question9" onclick = "updateQuestion(9)">Question 9</button>
+            <button id = "question10" onclick = "updateQuestion(10)">Question 10</button>
+        </div>
+        </div>
+</html>
