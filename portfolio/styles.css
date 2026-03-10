@@ -1,0 +1,45 @@
+body{
+    color: rgb(47, 48, 47);
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+#profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+}
+h3{
+    font-size: 18px;
+    margin-top: 5px;
+    color: #666;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+.center {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #858585 ;
+  padding: 10px;
+}
+button {
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background: #eee;
+    border-radius: 5px;
+}
