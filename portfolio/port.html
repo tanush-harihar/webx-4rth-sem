@@ -1,46 +1,163 @@
+<!DOCTYPE html>
 <html>
-<header>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</header>
+<head>
+<title>Tanush Harihar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-    <header class="center">
-        <h1>My Portfolio</h1>
-        <a href = "#about"><button>Home</button></a>
-        <a href = "#experience"><button>Experience</button></a>
-        <a href = "#projects"><button>Projects</button></a>
-        <a href = "#contact"><button>Contact</button></a>
-    </header>
-    <div class="center" id = "about">
-        <img   src="peakpx.jpeg" alt="Tanush Harihar" id = "profile-pic">
-        <h1>Tanush Harihar</h1>
-        <h3>Software Engineer</h2>
-        <p>Passionate about building scalable software solutions and exploring new technologies.<br> 
-             Experienced in full-stack development and always eager to learn and grow in the field of 
-            <br>software engineering.</p>
-        <h3>Contact Information</h3>
-        <button onclick="window.location.href='mailto:tanushharihar@gmail.com'">Email Me</button>
-        <button onclick="window.location.href='https://www.linkedin.com/in/tanush-harihar/'">LinkedIn</button>
-        <button onclick="window.location.href='https://github.com/tanush-harihar'">GitHub</button>
-        <button onclick="window.location.href='https://www.instagram.com/harihartanush/'">Instagram</button>
-    </div>
-    <div class="center" id = "experience">
-        <h1>Experience</h1>
-        <h3>worked at XYZ Company</h3>
-        <p>
-        Designed gameplay mechanics and core software features using C#, C++, <br>
-        and engine frameworks. Improved system performance, reduced bugs through structured <br>
-        testing, and contributed to scalable project architecture. Gained hands-on experience <br>
-        in debugging, version control, and cross-team collaboration.
-        </p>
-    </div>
-    <div class="center" id = "projects">
-        <h1>Projects</h1>
-        <h3>Project 1: Flowchart to code</h3>
-        <p>
-        Developed a responsive windows application that converts flowcharts into executable code.<br>
-        Utilized a user-friendly interface for designing flowcharts, implemented algorithms <br> 
-        to parse and translate flowchart elements into code, and integrated error handling for invalid inputs.<br>
-         The project demonstrates proficiency in software design, algorithm development, and user experience optimization.
-        </p>
+
+<header class="center">
+<nav>
+<a href="#about"><button>Home</button></a>
+<a href="#skills"><button>Skills</button></a>
+<a href="#projects"><button>Projects</button></a>
+<a href="#education"><button>Education</button></a>
+<a href="#contact"><button>Contact</button></a>
+</nav>
+</header>
+
+<div class="center" id="about">
+<img src="peakpx.jpeg" id="profile-pic">
+
+<h1>Tanush Harihar</h1>
+<h2>About Me</h2>
+
+<p>
+I am a computer science student passionate about building practical
+software tools and exploring system design, game development,
+and algorithmic problem solving.
+</p>
+<p>
+My interests include software architecture, artificial intelligence,
+and interactive applications. I enjoy transforming ideas into
+functional systems and continuously improving my technical skills.
+</p>
+</div>
+
+<div class="center" id="skills">
+
+<h2>Technical Skills</h2>
+
+<ul>
+<li>Languages: Python, Java, C++, JavaScript</li>
+<li>Frameworks & Tools: Unity, WinForms, Git</li>
+<li>Concepts: Data Structures, Algorithms, OOP</li>
+<li>Other Interests: Game Development, AI, Software Architecture</li>
+</ul>
+
+</div>
+
+<div class="center" id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Flow 2 Code</h3>
+    <p>
+      Flow 2 Code is a desktop application that lets users visually construct flowcharts
+      and automatically translate them into working code. It parses logical nodes such as
+      conditions, loops, and process blocks, generating structured output across multiple
+      languages including Java, Python, JavaScript, and C++, bridging the gap between
+      visual algorithm design and real-world programming for beginners.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Budget Manager</h3>
+    <p>
+      Budget Manager is a personal finance application that helps users track income,
+      expenses, and spending habits by categorizing transactions into groups such as
+      essentials, entertainment, and savings, providing meaningful insights into financial
+      behavior through a simple and intuitive interface.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Racing Game</h3>
+    <p>
+      An interactive racing game built around responsive vehicle physics, collision
+      detection, and smooth performance optimization, offering practical experience in
+      game loop design, real-time debugging, and iterative gameplay refinement to deliver
+      an engaging driving experience.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Ohmdex</h3>
+    <p>
+      Ohmdex is an Android AR application built in Unreal Engine 5 that makes electronics
+      education interactive and engaging. Users can scan real-world components using
+      ARCore to instantly retrieve component data, collect and catalog parts through a
+      collectables system, and receive intelligent circuit suggestions through a built-in
+      recommendation model — think SuperCook, but for electronics.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Portfolio Manager</h3>
+    <p>
+      Portfolio Manager is an Android application designed to help users track and manage
+      their investment portfolio on the go. The app allows users to monitor holdings,
+      visualize performance through charts, and stay on top of their financial assets,
+      combining clean mobile UI design with practical data visualization using
+      MPAndroidChart.
+    </p>
+  </div>
+
+</div>
+
+<div class="center" id="experience">
+
+<h2>Experience</h2>
+
+<h3>Software & Game Development Projects</h3>
+
+<p>
+Worked on multiple independent software projects involving
+algorithm design, application architecture, debugging,
+and version control. Focused on writing efficient,
+maintainable code and building functional prototypes.
+</p>
+
+</div>
+
+<div class="center" id="education">
+
+<h2>Education</h2>
+<h3>10th Grade (SSC)</h3>
+    <p>Completed secondary schooling with a foundation in mathematics, science, and core academic subjects.</p>
+
+<h3>Diploma in Computer Engineering</h3>
+    <p>Completed a diploma covering core computer engineering fundamentals including networking, hardware, and software development.</p>
+
+<h3>Computer Science</h3>
+    <p>
+    Currently pursuing a degree focused on programming,
+    software engineering principles, and modern computing technologies.
+    </p>
+</div>
+
+<div class="center" id="contact">
+
+<h2>Contact</h2>
+
+<button onclick="window.location.href='mailto:tanushharihar@gmail.com'">
+Email
+</button>
+
+<button onclick="window.location.href='https://github.com/tanush-harihar'">
+GitHub
+</button>
+
+<button onclick="window.location.href='https://www.linkedin.com/in/tanush-harihar/'">
+LinkedIn
+</button>
+
+<button onclick="window.location.href='https://www.instagram.com/harihartanush/'">
+Instagram
+</button>
+
+</div>
+
 </body>
 </html>
