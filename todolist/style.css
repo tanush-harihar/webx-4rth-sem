@@ -1,0 +1,134 @@
+body{
+    font-family: system-ui, Roboto;
+    background-color: rgb(255, 180, 82);
+}
+.sidebar{
+    width :200px;
+    height: 650px;
+    background-color:antiquewhite;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 10px;
+}
+.sidebar button{
+    width: 180px;
+    padding: 10px;
+    margin:5px;
+    margin-left: 10px;
+    border: 0px;
+    border-radius: 8px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: rgb(247, 240, 230);
+}
+.sidebar hr {
+    height: 5px; 
+    width: 180px;
+    margin-left: 10px;
+    color:rgb(255, 209, 153);
+    background-color:rgb(255, 217, 171);
+    border: 0;
+    border-radius: 5px;
+}
+.sidebar .logo{
+    height: 50px;
+    width: 50px;
+}
+.sidebar .top{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.sidebar button:hover{
+    border: 2px solid  rgb(255, 207, 140);
+    background-color: rgb(255, 229, 197);
+}
+.main-box{
+    flex: 1;
+    display:flow-root;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.main-container{
+    display: flex;
+}
+.task-form{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.task{
+    background: #ffe0b2;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: normal;
+}
+.task-form input{
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.task-form select{
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.task-form select:focus{
+    outline: none;
+    border: 1px solid #ffcc80;
+}
+
+.add-btn{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc80;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: #ffb74d;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.right-panel{
+    width: 60%;
+    padding: 20px;
+    margin-left: 10px;
+    background-color: hsl(36, 100%, 82%);
+    border-radius: 12px;
+    height: 610px;
+}
+
+.board{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.column{
+    flex: 10;
+    min-height: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+

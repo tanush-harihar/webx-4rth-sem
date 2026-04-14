@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Taskly</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <img src="logo.jpg" class="logo" alt="Logo">
+                </div>
+                <h3>Taskly <br> for Tanush </h3>
+            </div>
+            <hr>
+            <button onclick="filterTasks('thisweek')">This Week</button>
+            <button onclick="filterTasks('tomorrow')">Tomorrow</button>
+            <button onclick="filterTasks('today')">Today</button>
+            <button onclick="filterTasks('yesterday')">Yesterday</button>
+            <button onclick="filterTasks('lastweek')">Last Week</button>
+            <hr>
+            <button onclick="filterTasks('all')">Work Board</button>
+        </div>
+
+        <div class="main-box">
+            <h1>Enter Task to complete</h1>
+            <div class="task-form">
+                <h2>Add New Task</h2>
+                <label>Task Name</label>
+                <input id="taskName" type="text" placeholder="Enter task name">
+                
+                <label>Completion Date &amp; Time</label>
+                <input id="taskDate" type="datetime-local">
+                
+                <label>Progress</label>
+                <select id="taskStatus">
+                    <option>Backlog</option>
+                    <option>Up Next</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                </select>
+                <button class="add-btn" onclick="addTask()">Add Task</button>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h1>Your Tasks</h1>
+            <div class="board">
+                <div id="backlog" class="column"><h2>Backlog</h2></div>
+                <div id="upnext" class="column"><h2>Up Next</h2></div>
+                <div id="inprogress" class="column"><h2>In Progress</h2></div>
+                <div id="completed" class="column"><h2>Completed</h2></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
