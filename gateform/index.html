@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GATE Application Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="Top">
+        <img class="logo" src="gate-logo.png">
+        
+        <div class="heading">
+            <h1>GRADUATE APTITUDE TEST IN ENGINEERING 2026<br>
+            अभियांत्रिकी स्नातक अभिक्षमता परीक्षा 2026</h1>
+            <h3>Organizing Institute : IIT Guwahati</h3>
+        </div>
+
+        <img class="logo" src="iitg-logo.png">
+    </div>
+
+    <!-- Form -->
+    <div class="form-container">
+        <h2>Application Form</h2>
+
+        <form>
+
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label>Full Name:</label>
+                <input type="text" required>
+
+                <label>Date of Birth:</label>
+                <input type="date" required>
+
+                <label>Gender:</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Email:</label>
+                <input type="email" required>
+
+                <label>Mobile Number:</label>
+                <input type="tel" required>
+            </fieldset>
+
+            <!-- Academic Details -->
+            <fieldset>
+                <legend>Academic Details</legend>
+
+                <label>Degree:</label>
+                <input type="text">
+
+                <label>College Name:</label>
+                <input type="text">
+
+                <label>Year of Passing:</label>
+                <input type="number">
+
+                <label>Branch:</label>
+                <input type="text">
+            </fieldset>
+
+            <!-- Exam Details -->
+            <fieldset>
+                <legend>Exam Details</legend>
+
+                <label>Paper:</label>
+                <select>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>ME</option>
+                    <option>CE</option>
+                </select>
+
+                <label>Exam City:</label>
+                <input type="text">
+            </fieldset>
+
+            <!-- Upload -->
+            <fieldset>
+                <legend>Upload Documents</legend>
+
+                <label>Photo:</label>
+                <input type="file">
+
+                <label>Signature:</label>
+                <input type="file">
+            </fieldset>
+
+            <!-- Submit -->
+            <button type="submit">Submit Application</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
