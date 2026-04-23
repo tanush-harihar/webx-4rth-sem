@@ -7,7 +7,6 @@ body {
 /* Header */
 .Top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
     background-color: white;
@@ -21,16 +20,15 @@ body {
     text-align: center;
 }
 
-h1 {
+.heading h1 {
     color: purple;
     font-size: 20px;
 }
 
-h3 {
+.heading h3 {
     color: #2f905c;
     font-size: 16px;
 }
-/* Form container stays same */
 .form-container {
     width: 70%;
     margin: 30px auto;
@@ -40,40 +38,35 @@ h3 {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-/* Make each fieldset a grid */
 fieldset {
     border: 1px solid #ccc;
     margin-bottom: 20px;
     padding: 20px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 🔥 2 columns */
+    grid-template-columns: 1fr 1fr;
     gap: 15px 20px;
 }
 
-/* Make legend full width */
 legend {
     grid-column: span 2;
     font-weight: bold;
+    color: purple;
 }
 
-/* Labels + inputs alignment */
 label {
     margin-top: 5px;
 }
 
-/* Inputs take full column width */
 input, select {
     width: 100%;
     padding: 8px;
 }
 
-/* Force some elements to span full width */
 .full-width {
     grid-column: span 2;
 }
 
-/* Button full width */
 button {
     width: 100%;
     padding: 12px;

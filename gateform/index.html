@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GATE Application Form</title>
     <link rel="stylesheet" href="main.css">
+    <script>
+    function goToPreview() {
+            window.location.href = "preview.html";
+    }
+    </script>
 </head>
 <body>
 
-    <!-- Header -->
     <div class="Top">
         <img class="logo" src="gate-logo.png">
         
@@ -22,20 +26,19 @@
     </div>
 
     <!-- Form -->
-    <div class="form-container">
+    <div class="form-container" id="gateForm">
         <h2>Application Form</h2>
 
         <form>
 
-            <!-- Personal Details -->
             <fieldset>
                 <legend>Personal Details</legend>
 
                 <label>Full Name:</label>
-                <input type="text" required>
+                <input type="text" id = "name">
 
                 <label>Date of Birth:</label>
-                <input type="date" required>
+                <input type="date" id = "dob">
 
                 <label>Gender:</label>
                 <select>
@@ -45,13 +48,12 @@
                 </select>
 
                 <label>Email:</label>
-                <input type="email" required>
+                <input type="email">
 
                 <label>Mobile Number:</label>
-                <input type="tel" required>
+                <input type="tel">
             </fieldset>
 
-            <!-- Academic Details -->
             <fieldset>
                 <legend>Academic Details</legend>
 
@@ -68,7 +70,6 @@
                 <input type="text">
             </fieldset>
 
-            <!-- Exam Details -->
             <fieldset>
                 <legend>Exam Details</legend>
 
@@ -84,20 +85,17 @@
                 <input type="text">
             </fieldset>
 
-            <!-- Upload -->
             <fieldset>
                 <legend>Upload Documents</legend>
 
                 <label>Photo:</label>
-                <input type="file">
+                <input type="file" id = "photo" >
 
                 <label>Signature:</label>
-                <input type="file">
+                <input type="file" id = "sign">
             </fieldset>
 
-            <!-- Submit -->
-            <button type="submit">Submit Application</button>
-
+            <button type="button" onclick="goToPreview()">Submit Application</button>
         </form>
     </div>
 
