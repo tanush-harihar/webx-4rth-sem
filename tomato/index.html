@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMMATO - Food Delivery</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="Top">
+    <div class="brand">
+        <span class="logo-icon">🍅</span>
+        <h1>TOMMATO</h1>
+    </div>
+    <input class="search" type="text" placeholder="🔍  Search food..." oninput="filterFood(this.value)">
+    <div class="header-tagline">Fast. Fresh. Delicious.</div>
+</header>
+
+<div class="main-container">
+    <div class="container">
+        <div class="menu">
+            <h2 class="section-title">Popular Items</h2>
+            <div class="food-container" id="foodContainer">
+
+                <div class="food-card" data-name="pizza">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="pizza.png" alt="Pizza">
+                        <span class="badge">🔥 Hot</span>
+                    </div>
+                    <h3>Pizza</h3>
+                    <p class="food-desc">Classic wood-fired pizza</p>
+                    <button onclick="addToCart('pizza')">Add  ₹250</button>
+                </div>
+
+                <div class="food-card" data-name="burger">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="burger.jpg" alt="Burger">
+                        <span class="badge">⭐ Top</span>
+                    </div>
+                    <h3>Burger</h3>
+                    <p class="food-desc">Juicy double patty</p>
+                    <button onclick="addToCart('burger')">Add  ₹120</button>
+                </div>
+
+                <div class="food-card" data-name="pasta">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="pasta.jpg" alt="Pasta">
+                    </div>
+                    <h3>Pasta</h3>
+                    <p class="food-desc">Creamy Italian pasta</p>
+                    <button onclick="addToCart('pasta')">Add  ₹180</button>
+                </div>
+
+                <div class="food-card" data-name="frenchfries">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="french.jpg" alt="French Fries">
+                    </div>
+                    <h3>French Fries</h3>
+                    <p class="food-desc">Crispy golden fries</p>
+                    <button onclick="addToCart('frenchfries')">Add  ₹90</button>
+                </div>
+
+                <div class="food-card" data-name="sandwich">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="sandwitch.jpg" alt="Sandwich">
+                    </div>
+                    <h3>Sandwich</h3>
+                    <p class="food-desc">Loaded club sandwich</p>
+                    <button onclick="addToCart('sandwich')">Add  ₹110</button>
+                </div>
+
+                <div class="food-card" data-name="coldcoffee">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="coldcoffee.jpg" alt="Cold Coffee">
+                        <span class="badge">❄️ Cool</span>
+                    </div>
+                    <h3>Cold Coffee</h3>
+                    <p class="food-desc">Chilled & creamy brew</p>
+                    <button onclick="addToCart('coldcoffee')">Add  ₹80</button>
+                </div>
+
+                <div class="food-card" data-name="milkshake">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="milkshake.jpg" alt="Milkshake">
+                    </div>
+                    <h3>Milkshake</h3>
+                    <p class="food-desc">Thick & rich shake</p>
+                    <button onclick="addToCart('milkshake')">Add  ₹130</button>
+                </div>
+
+                <div class="food-card" data-name="biryani">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="biryani.jpg" alt="Veg Biryani">
+                        <span class="badge">🌿 Veg</span>
+                    </div>
+                    <h3>Veg Biryani</h3>
+                    <p class="food-desc">Aromatic basmati rice</p>
+                    <button onclick="addToCart('biryani')">Add  ₹200</button>
+                </div>
+
+                <div class="food-card" data-name="paneertikka">
+                    <div class="food-img-wrap">
+                        <img class="food-image" src="paneer.jpg" alt="Paneer Tikka">
+                        <span class="badge">🌶️ Spicy</span>
+                    </div>
+                    <h3>Paneer Tikka</h3>
+                    <p class="food-desc">Smoky grilled paneer</p>
+                    <button onclick="addToCart('paneertikka')">Add  ₹220</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cart" id="cartPanel">
+        <div class="cart-header">
+            <h2>🛒 Your Cart</h2>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+        <ul id="cartItems" class="cart-list"></ul>
+        <div class="cart-empty" id="cartEmpty">No items yet. Start ordering!</div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <span class="total-amount">₹<span id="total">0</span></span>
+            </div>
+            <button class="checkout" onclick="checkout()">Checkout →</button>
+        </div>
+    </div>
+</div>
+
+<!-- Toast notification -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
