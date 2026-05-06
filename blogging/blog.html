@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The Inkwell</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<nav>
+  <span class="logo">✒ The Inkwell</span>
+  <div id="nav" style="display:flex;gap:.4rem">
+    <button onclick="go('login')">Login</button>
+  </div>
+</nav>
+<div class="toast" id="toast"></div>
+
+<!-- LOGIN -->
+<div class="screen active" id="s-login">
+  <div style="max-width:340px;margin:4rem auto">
+    <div class="card">
+      <h2 style="margin-bottom:1rem">Sign in</h2>
+      <label>Role</label>
+      <select id="lr"><option value="reader">Reader</option><option value="writer">Writer</option><option value="admin">Admin</option></select>
+      <label>Password</label>
+      <input type="password" id="lp" placeholder="Password…">
+      <div id="lerr">Wrong password.</div>
+      <p style="font-size:.78rem;color:var(--muted);margin-bottom:.7rem">Reader: <b>read123</b> · Writer: <b>write123</b> · Admin: <b>admin123</b></p>
+      <button class="btn p" style="width:100%" onclick="doLogin()">Sign in →</button>
+    </div>
+  </div>
+</div>
+
+<!-- READER -->
+<div class="screen" id="s-reader">
+  <h1 style="font-size:1.9rem;margin-bottom:.2rem">Reading Room</h1>
+  <p style="color:var(--muted);margin-bottom:1.2rem">Browse all published blogs.</p>
+  <div class="row" style="margin-bottom:1rem">
+    <input id="q" placeholder="Search…" style="flex:1;min-width:140px;margin:0" oninput="renderR()">
+    <select id="ft" style="width:155px;margin:0" onchange="renderR()"><option value="">All categories</option></select>
+  </div>
+  <div id="blist"></div>
+</div>
+
+<!-- FULL POST -->
+<div class="screen" id="s-post">
+  <button class="btn g" style="margin-bottom:1rem" onclick="go('reader')">← Back</button>
+  <div id="pbody" style="max-width:600px"></div>
+</div>
+
+<!-- WRITER -->
+<div class="screen" id="s-writer">
+  <h1 style="font-size:1.9rem;margin-bottom:.2rem">Writer Studio</h1>
+  <p style="color:var(--muted);margin-bottom:1.2rem">Compose and publish your blogs.</p>
+  <div class="card">
+    <label>Title</label><input id="wt" placeholder="Your headline…">
+    <label>Category</label><input id="wg" placeholder="e.g. Tech, Travel">
+    <label>Content</label><textarea id="wb" placeholder="Write your blog…"></textarea>
+    <div class="row">
+      <button class="btn p" onclick="pub()">Publish</button>
+      <button class="btn g" onclick="clr()">Clear</button>
+    </div>
+  </div>
+  <hr>
+  <h3 style="margin-bottom:.8rem">Your Posts</h3>
+  <div id="myposts"></div>
+</div>
+
+<!-- ADMIN -->
+<div class="screen" id="s-admin">
+  <h1 style="font-size:1.9rem;margin-bottom:.2rem">Admin Panel</h1>
+  <p style="color:var(--muted);margin-bottom:1.2rem">Moderate all content.</p>
+  <div id="alist"></div>
+</div>
+
+<script src="blog.js"></script>
+</body>
+</html>
